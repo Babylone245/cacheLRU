@@ -1,8 +1,8 @@
-mod model;
-use model::cache::Cache;#[cfg(test)]
+pub mod model;
+
 
 mod tests {
-    use super::*;
+    use crate::model::cache::Cache;
 
     #[test]
     fn test_lru_cache() {
